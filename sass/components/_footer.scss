@@ -1,0 +1,34 @@
+.footer {
+  max-width: 1600px;
+
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  text-align: center;
+
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+  }
+
+  background-color: $color-background-dark;
+
+  &__container {
+    @media screen and (min-width: 768px) {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: baseline;
+    }
+  }
+
+  &__logo {
+    display: block;
+
+    margin-bottom: 20px;
+    margin-right: auto;
+    margin-left: auto;
+
+    color: $color-text-light;
+  }
+}

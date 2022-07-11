@@ -1,0 +1,59 @@
+.footer-form {
+  margin-right: auto;
+  margin-left: auto;
+
+  &__title {
+    margin-bottom: 20px;
+
+    color: $color-text-light;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.1;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+  }
+
+  &__contain {
+    @media screen and (min-width: 1200px) {
+      display: flex;
+    }
+  }
+
+  &__input {
+    width: 100%;
+    height: 50px;
+
+    margin-bottom: 20px;
+    padding-left: 16px;
+
+    color: $color-text-light;
+
+    background-color: $color-background-dark;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+
+    @media screen and (min-width: 768px) {
+      width: 450px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      margin-right: 12px;
+      width: 358px;
+    }
+  }
+
+  &__icon {
+    fill: $color-text-light;
+    margin-left: 10px;
+  }
+
+  &__button {
+    @include flexCenter($type: flex, $main-axis: center, $cross-axis: center);
+
+    @media screen and (max-width: 1199px) {
+      margin-right: auto;
+      margin-left: auto;
+    }
+  }
+}
